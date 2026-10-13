@@ -1,0 +1,38 @@
+/* Reusable, feathered plum/orange glow. No layout space or hit targets. */
+.chapter-glow {
+  position: relative;
+  isolation: isolate;
+}
+.chapter-glow::before,
+.chapter-glow::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  left: calc(50% + var(--glow-x, 0) * 1%);
+  top: calc(50% + var(--glow-y, -38) * 1%);
+  width: min(calc(960px * var(--glow-size, 1)), 96vw);
+  height: calc(420px * var(--glow-size, 1));
+  border-radius: 50%;
+  filter: blur(28px) brightness(var(--glow-opacity, 1.2));
+  mask-image: radial-gradient(ellipse, #000 18%, #0009 45%, transparent 72%);
+  background:
+    radial-gradient(ellipse at 36% 46%, #59114e70 0%, #59114e38 24%, #59114e00 61%),
+    radial-gradient(ellipse at 65% 58%, #ff722238 0%, #bf472620 25%, #ff722200 62%);
+  transform: var(--glow-transform-0, translate(-50%, -46%));
+}
+.chapter-glow::after {
+  width: min(calc(740px * var(--glow-size, 1)), 86vw);
+  height: calc(320px * var(--glow-size, 1));
+  background:
+    radial-gradient(ellipse at 42% 54%, #a76cbe28 0%, #a76cbe10 28%, #a76cbe00 63%),
+    radial-gradient(ellipse at 67% 43%, #ff722225 0%, #ff722200 59%);
+  transform: var(--glow-transform-1, translate(-50%, -46%));
+}
+@media (max-width: 700px) {
+  .chapter-glow::before { width: calc(88vw * var(--glow-size, 1)); height: calc(320px * var(--glow-size, 1)); }
+  .chapter-glow::after { width: calc(80vw * var(--glow-size, 1)); height: calc(260px * var(--glow-size, 1)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .chapter-glow::before, .chapter-glow::after { transform: translate(-50%, -46%); }
+}

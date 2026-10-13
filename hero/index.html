@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0E0807">
+  <title>Suno — Hero Playground</title>
+  <meta name="description" content="Suno Hero 设计测试：连续翻转的立体专辑。">
+  <link rel="icon" href="../suno/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./hero.css">
+  <link rel="stylesheet" href="./homepage-nav.css">
+  <script src="../suno-redesign-site/suno-redesign/content.js" defer></script>
+  <script src="./hero.bundle.js" type="module"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <button class="mobile-toggle icon-btn" type="button" aria-label="打开菜单"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <nav class="desktop-nav" aria-label="主导航">
+        <div class="nav-item" data-popover>
+          <button type="button" aria-expanded="false" aria-controls="menu-products">Products<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="mega" id="menu-products">
+            <div class="mega-inner">
+              <div><p>Overview</p><button type="button">V6 Models</button><button type="button">Studio</button><button type="button">Voices</button><button type="button">Stem Separation</button><button type="button">Remix</button><button type="button">Custom Models</button></div>
+              <div><p>Our Latest Model</p><button type="button" class="mega-card"><img src="./assets/f7cf1b33-v6.jpg" alt="" loading="lazy" width="300" height="200"><strong>Introducing the v6 family.</strong><span>It’s our most powerful model yet, and there’s more than just one.</span></button></div>
+              <div><p>Suno Studio</p><button type="button" class="mega-card"><img src="./assets/748c44de-studio.jpg" alt="" loading="lazy" width="300" height="200"><strong>Be a control freak.</strong><span>A browser-based DAW for arranging, editing and mixing every part of a song until it is exactly yours.</span></button></div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item" data-popover>
+          <button type="button" aria-expanded="false" aria-controls="menu-resources">Resources<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="mega" id="menu-resources">
+            <div class="mega-inner">
+              <div><p>Company</p><button type="button">About</button><button type="button">Blog</button><button type="button">Release Notes</button><button type="button">Safety</button><button type="button">Community Guidelines</button><button type="button">Contact Us</button><button type="button">Help</button></div>
+              <div class="news"><p>Latest news<button type="button">See all ↗</button></p><button type="button" class="news-item"><strong>5 Albums You Can’t Miss</strong><span>Discover some of the first albums on Suno.</span></button><button type="button" class="news-item"><strong>Introducing Speech (beta)</strong><span>A new way to express yourself creatively</span></button><button type="button" class="news-item"><strong>Three Must-learn Tips for Using EQ</strong><span>Get started with Suno Studio.</span></button></div>
+            </div>
+          </div>
+        </div>
+        <button type="button">Pricing</button>
+        <button type="button">Careers</button>
+      </nav>
+      <div class="account">
+        <div class="language-menu" data-popover>
+          <button class="login language-trigger" type="button" aria-label="选择语言" aria-expanded="false" aria-controls="language-card"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18"/></svg></button>
+          <div class="language-card" id="language-card" role="group" aria-label="语言">
+            <a href="/suno-redesign-site/suno-redesign/zh/" lang="zh-CN">简体中文</a><a href="/suno-redesign-site/suno-redesign/en/" lang="en">English</a>
+          </div>
+        </div>
+        <div class="app-menu" data-popover>
+          <button class="login app-trigger" aria-label="Mobile App" type="button" aria-expanded="false" aria-controls="app-card"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg></button>
+          <div class="app-card" id="app-card" role="group" aria-label="Suno 移动应用">
+            <div class="app-downloads">
+            <p class="app-rank"><strong>#1</strong><span>AI music app</span></p>
+            <div class="app-store">
+              <span class="store-logo-box" aria-hidden="true"><svg class="store-logo store-logo--apple" viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg></span>
+              <div class="store-meta"><span class="store-label">iPhone</span><span class="store-score"><strong>4.9</strong><span class="stars" aria-label="5 星评分">★★★★★</span></span></div>
+              <button class="store-download" type="button" aria-label="下载 iPhone 版"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg></button>
+            </div>
+            <div class="app-store">
+              <span class="store-logo-box" aria-hidden="true"><svg class="store-logo store-logo--android" viewBox="0 0 24 24"><path d="M17.6 9.48 19.44 6.3c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.43 11.43 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.3.16-.42.54-.26.85L6.4 9.48A10.81 10.81 0 0 0 1 18h22a10.81 10.81 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg></span>
+              <div class="store-meta"><span class="store-label">Android</span><span class="store-score"><strong>4.8</strong><span class="stars" aria-label="5 星评分">★★★★★</span></span></div>
+              <button class="store-download" type="button" aria-label="下载 Android 版"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg></button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <button class="pill white" type="button">Log in</button>
+      </div>
+    </div>
+  </header>
+  <main class="hero" id="hero">
+    <canvas id="flowing-background" class="flowing-background" aria-hidden="true" hidden></canvas>
+    <canvas id="flow-color-background" class="flowing-background flow-color-background" aria-hidden="true"></canvas>
+    <div class="album-stage" id="album-stage" aria-hidden="true">
+      <div class="fallback-stack" id="fallback-stack">
+        <img src="../suno-redesign-site/suno-redesign/assets/4d736141-ed03f4a8-f705-4582-b086-17b62f3e117e.jpeg" alt="">
+        <img src="../suno-redesign-site/suno-redesign/assets/dbb1b3f0-ef6580db-bc54-4930-9813-dd405ee29bdb.jpeg" alt="">
+        <img src="../suno-redesign-site/suno-redesign/assets/dc6c7e11-c1a16429-f3fe-4d99-bdcf-61ee13ed6f00_22535392.jpeg" alt="">
+        <img src="../suno-redesign-site/suno-redesign/assets/888be8df-569593ec-f0ac-445c-b99c-6ca6141634b8.jpeg" alt="">
+        <img src="../suno-redesign-site/suno-redesign/assets/21c01a0f-538ab4ae-3ace-4abf-95f9-be0bed53b65d_e7472649.jpeg" alt="">
+      </div>
+    </div>
+
+
+    <button class="album-play" id="album-play" type="button" tabindex="-1" aria-label="播放"></button>
+    <section class="hero-copy" aria-label="Suno">
+      <div class="hero-prompt" aria-hidden="true"></div>
+      <h1><img class="wordmark" src="../suno-redesign-site/suno-redesign/assets/logo-live.svg" alt="Suno" width="606" height="149"></h1>
+      <p class="hero-line"><span class="vibrant-line">Your next favorite song</span><span class="vibrant-line">could be <em>yours.</em></span><span class="hero-line-lift" aria-hidden="true"><span class="vibrant-line">Your next favorite song</span><span class="vibrant-line">could be <em>yours.</em></span></span></p>
+      <button class="hero-cta" type="button"><span class="hero-cta-glow" aria-hidden="true"></span><span class="hero-cta-label">Join Suno for free</span></button>
+    </section>
+
+      <div class="press-marquee" aria-label="媒体报道">
+        <div class="press-track">
+          <img src="../suno-redesign-site/suno-redesign/assets/ba5cb9fe-Rolling_Stone_logo-opaque.svg" alt="Rolling Stone">
+          <img src="../suno-redesign-site/suno-redesign/assets/f44a1054-Variety_logo-opaque.svg" alt="Variety">
+          <img src="../suno-redesign-site/suno-redesign/assets/f0afc2f2-Wired_logo-opaque.svg" alt="WIRED">
+          <img src="../suno-redesign-site/suno-redesign/assets/e1bebd9d-Billboard_logo-opaque.svg" alt="Billboard">
+          <img src="../suno-redesign-site/suno-redesign/assets/d3915737-COMPLEX_Magazine_logo-opaque.svg" alt="Complex">
+          <img src="../suno-redesign-site/suno-redesign/assets/c5edaca4-Forbes_logo-opaque.svg" alt="Forbes">
+        </div>
+      </div>
+
+    <div class="album-timeline" role="group" aria-label="专辑切换进度" hidden>
+      <div class="timeline-heading"><label for="album-progress">切换进度</label><output id="album-progress-value" for="album-progress">0%</output></div>
+      <input id="album-progress" type="range" min="0" max="1000" step="1" value="0" disabled aria-label="拖动查看专辑切换进度">
+      <div class="timeline-caption"><span>当前正面结束</span><span>下一张正面</span></div>
+    </div>
+    <footer class="playground-footer" hidden>
+      <div class="motion-tools" role="group" aria-label="动画控制">
+        <button id="previous-album" class="motion-tools-icon" type="button" aria-label="向上切换上一张专辑" title="上一张" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 10 6-6 6 6M12 4v16"/></svg></button>
+        <button id="next-album" class="motion-tools-icon" type="button" aria-label="向下切换下一张专辑" title="下一张" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6 6 6-6M12 20V4"/></svg></button>
+        <span class="tool-separator" aria-hidden="true"></span>
+        <button id="toggle-auto" type="button">暂停滚动</button>
+        <button id="toggle-settings" type="button" aria-expanded="false" aria-controls="settings-panel" disabled>专辑效果 <span aria-hidden="true">＋</span></button>
+        <button id="toggle-background" type="button" aria-expanded="false" aria-controls="background-panel">背景效果 <span aria-hidden="true">＋</span></button>
+      </div>
+    </footer>
+
+    <section id="background-panel" class="settings-panel background-panel" aria-label="背景效果参数" hidden>
+      <div class="settings-heading"><h2>背景效果</h2><button id="bg-reset" type="button">重置</button></div>
+      <label for="bg-mode">背景类型</label><select id="bg-mode" class="bg-select"><option value="flowingGradient">流动渐变 + 颗粒</option><option value="flowColor" selected>流动色场</option></select>
+      <label for="bg-opacity">背景强度<output id="bg-opacity-value"></output></label><input id="bg-opacity" type="range" min="0" max="1" step="0.05" value="0.8">
+<div id="bg-flow-controls">
+      <label for="bg-flow-speed">流动速度<output id="bg-flow-speed-value"></output></label><input id="bg-flow-speed" type="range" min="0" max="4" step="0.05" value="0.5">
+      <label for="bg-flow-scale">色团密度<output id="bg-flow-scale-value"></output></label><input id="bg-flow-scale" type="range" min="0.2" max="3" step="0.05" value="0.95">
+      <label for="bg-flow-warp">扭曲程度<output id="bg-flow-warp-value"></output></label><input id="bg-flow-warp" type="range" min="0" max="2" step="0.05" value="0.1">
+      <label for="bg-flow-warpScale">扭曲频率<output id="bg-flow-warpScale-value"></output></label><input id="bg-flow-warpScale" type="range" min="0.1" max="2" step="0.05" value="2">
+      <label for="bg-flow-softness">边缘柔和<output id="bg-flow-softness-value"></output></label><input id="bg-flow-softness" type="range" min="0.005" max="0.3" step="0.005" value="0.09">
+      <label for="bg-flow-holdMs">配色停留<output id="bg-flow-holdMs-value"></output></label><input id="bg-flow-holdMs" type="range" min="200" max="10000" step="100" value="5000">
+      <label for="bg-flow-transitionMs">配色过渡<output id="bg-flow-transitionMs-value"></output></label><input id="bg-flow-transitionMs" type="range" min="0" max="5000" step="100" value="900">
+      <h3 class="bg-section-title">颗粒</h3>
+      <p class="parameter-hint">把颜色交界打散成细颗粒，交界越近，两种颜色混得越密。</p>
+      <label for="bg-flow-grainPattern">噪点类型</label><select id="bg-flow-grainPattern" class="bg-select"><option value="whiteNoise">随机颗粒</option><option value="blueNoise">蓝噪颗粒</option><option value="bayer8">有序抖色</option></select>
+      <label for="bg-flow-grainAmount">颗粒扩散<output id="bg-flow-grainAmount-value"></output></label><input id="bg-flow-grainAmount" type="range" min="0" max="0.8" step="0.01" value="0.09">
+      <label for="bg-flow-grainSize">颗粒大小<output id="bg-flow-grainSize-value"></output></label><input id="bg-flow-grainSize" type="range" min="1" max="6" step="0.25" value="1.5">
+      <label for="bg-flow-grainLuma">亮度噪点<output id="bg-flow-grainLuma-value"></output></label><input id="bg-flow-grainLuma" type="range" min="0" max="0.3" step="0.01" value="0.04">
+      <label for="bg-flow-grainFps">颗粒闪动<output id="bg-flow-grainFps-value"></output></label><input id="bg-flow-grainFps" type="range" min="0" max="24" step="1" value="0">
+      <h3 class="bg-section-title">循环配色</h3>
+      <p class="parameter-hint">每组三色依次对应色团的低处、交界环和高处，按顺序循环。</p>
+      <div id="bg-flow-palettes"></div>
+      <button id="bg-flow-add-palette" class="bg-add-palette" type="button">＋ 添加配色</button>
+</div>
+<div id="bg-gradient-controls" hidden>
+      <label for="bg-speed">流动速度<output id="bg-speed-value"></output></label><input id="bg-speed" type="range" min="0" max="3" step="0.05" value="2.05">
+      <label for="bg-distortion">扭曲程度<output id="bg-distortion-value"></output></label><input id="bg-distortion" type="range" min="0" max="2" step="0.05" value=".4">
+      <label for="bg-seed">图案种子<output id="bg-seed-value"></output></label><input id="bg-seed" type="range" min="0" max="20" step="1" value="10">
+<div id="bg-grain-controls"><h3 class="bg-section-title">颗粒抖色</h3>
+      <label for="bg-grainPattern">噪点类型</label><select id="bg-grainPattern"><option value="whiteNoise">随机颗粒</option><option value="blueNoise">蓝噪颗粒</option><option value="bayer8">有序抖色</option></select>
+      <label for="bg-grainAmount">颗粒强度<output id="bg-grainAmount-value"></output></label><input id="bg-grainAmount" type="range" min="0" max="1" step="0.05" value=".25">
+      <label for="bg-grainSize">颗粒大小<output id="bg-grainSize-value"></output></label><input id="bg-grainSize" type="range" min="1" max="6" step="0.25" value="2">
+      <label for="bg-grainSpread">颗粒分布<output id="bg-grainSpread-value"></output></label><input id="bg-grainSpread" type="range" min="0.1" max="2" step="0.1" value=".8">
+      </div>
+      <label class="bg-color-row" for="bg-colorA">颜色一<input id="bg-colorA" type="color" value="#f2a8ff"></label>
+      <label class="bg-color-row" for="bg-colorB">颜色二<input id="bg-colorB" type="color" value="#b074c8"></label>
+      <label class="bg-color-row" for="bg-colorC">颜色三<input id="bg-colorC" type="color" value="#FF7222"></label>
+      <label class="bg-color-row" for="bg-colorD">颜色四<input id="bg-colorD" type="color" value="#8f147c"></label>
+</div>
+      <button id="bg-copy" class="copy-settings" type="button">复制背景参数</button><p id="bg-copy-status" role="status"></p><p id="bg-status" class="parameter-hint" role="status"></p>
+    </section>
+    <section id="settings-panel" class="settings-panel" aria-label="效果参数" hidden>
+      <div class="settings-heading"><h2>效果参数</h2><button id="reset-settings" type="button">重置</button></div>
+      <label class="settings-toggle-row" for="showTimeline"><span>显示切换进度</span><input id="showTimeline" type="checkbox"></label>
+      <label for="speed">切换速度 <output id="speed-value" for="speed">1.4×</output></label>
+      <input id="speed" type="range" min="0.5" max="2" step="0.1" value="1.4">
+      <label for="autoSpeed">自动滚动速度 <output id="autoSpeed-value">1.0×</output></label>
+      <input id="autoSpeed" type="range" min="0.1" max="3" step="0.1" value="1">
+      <label for="frontalSeconds">正面保持时间 <output id="frontalSeconds-value">12 秒</output></label>
+      <input id="frontalSeconds" type="range" min="1" max="30" step="1" value="12">
+      <p class="parameter-hint">自动速度控制翻转段，正面段按保持时间缓慢经过，第 8 秒自动向下切换。</p>
+      <label for="spacingX">水平间距 <output id="spacingX-value" for="spacingX">1.30</output></label>
+      <input id="spacingX" type="range" min="0.4" max="1.5" step="0.05" value="1.3">
+      <details class="curve-editor" data-axis="x"><summary>水平间距曲线</summary>
+        <div class="curve-presets"><button type="button" data-curve-preset="flat">均匀</button><button type="button" data-curve-preset="descending">渐疏 → 渐密</button></div>
+        <svg viewBox="0 0 240 140" aria-label="水平间距曲线图"><path class="curve-grid" d="M20 15V120H220M20 65H220M120 15V120"/><path class="curve-line"/><g class="curve-handles"></g></svg>
+        <div class="curve-scale"><span>1.5</span><span>−0.5</span></div>
+        <div class="curve-caption"><span>底部专辑</span><span>顶部专辑</span></div>
+        <p class="parameter-hint">上下拖动四个点；曲线越高，局部间距越大。</p>
+      </details>
+      <label for="spacingY">垂直间距 <output id="spacingY-value" for="spacingY">0.90</output></label>
+      <input id="spacingY" type="range" min="0.4" max="1.5" step="0.05" value="0.9">
+      <details class="curve-editor" data-axis="y"><summary>垂直间距曲线</summary>
+        <div class="curve-presets"><button type="button" data-curve-preset="flat">均匀</button><button type="button" data-curve-preset="descending">渐疏 → 渐密</button></div>
+        <svg viewBox="0 0 240 140" aria-label="垂直间距曲线图"><path class="curve-grid" d="M20 15V120H220M20 65H220M120 15V120"/><path class="curve-line"/><g class="curve-handles"></g></svg>
+        <div class="curve-scale"><span>1.5</span><span>−0.5</span></div>
+        <div class="curve-caption"><span>底部专辑</span><span>顶部专辑</span></div>
+        <p class="parameter-hint">上下拖动四个点；曲线越高，局部间距越大。</p>
+      </details>
+
+      <label for="spacingZ">纵深间距 <output id="spacingZ-value">2.00</output></label>
+      <input id="spacingZ" type="range" min="0" max="3" step="0.05" value="2">
+      <details class="curve-editor" data-axis="z"><summary>纵深间距曲线</summary>
+        <div class="curve-presets"><button type="button" data-curve-preset="flat">均匀</button><button type="button" data-curve-preset="descending">渐疏 → 渐密</button></div>
+        <svg viewBox="0 0 240 140" aria-label="纵深间距曲线图"><path class="curve-grid" d="M20 15V120H220M20 65H220M120 15V120"/><path class="curve-line"/><g class="curve-handles"></g></svg>
+        <div class="curve-scale"><span>1.5</span><span>−0.5</span></div>
+        <div class="curve-caption"><span>底部专辑</span><span>顶部专辑</span></div>
+        <p class="parameter-hint">上下拖动四个点；曲线越高，局部间距越大。</p>
+      </details>
+      <label for="clockwiseAngle">顺时针旋转角度 <output id="clockwiseAngle-value">31°</output></label>
+      <input id="clockwiseAngle" type="range" min="0" max="360" step="1" value="31">
+      <details class="curve-editor" data-axis="clockwise"><summary>顺时针旋转曲线</summary>
+        <div class="curve-presets"><button type="button" data-curve-preset="flat">均匀</button><button type="button" data-curve-preset="descending">渐强 → 渐弱</button></div>
+        <svg viewBox="0 0 240 140" aria-label="顺时针旋转曲线图"><path class="curve-grid" d="M20 15V120H220M20 65H220M120 15V120"/><path class="curve-line"/><g class="curve-handles"></g></svg>
+        <div class="curve-scale"><span>1.5</span><span>−0.5</span></div>
+        <div class="curve-caption"><span>底部专辑</span><span>顶部专辑</span></div>
+        <p class="parameter-hint">曲线越高，该处角度变化越快。上下两端向相反方向渐进，中央正面区间固定为 0°。</p>
+      </details>
+      <label for="rotation">旋转程度 <output id="rotation-value">1.30×</output></label>
+      <input id="rotation" type="range" min="0" max="2" step="0.05" value="1.3">
+      <details class="curve-editor" data-axis="rotation"><summary>旋转变化曲线</summary>
+        <div class="curve-presets"><button type="button" data-curve-preset="flat">均匀</button><button type="button" data-curve-preset="descending">渐强 → 渐弱</button></div>
+        <svg viewBox="0 0 240 140" aria-label="旋转变化曲线图"><path class="curve-grid" d="M20 15V120H220M20 65H220M120 15V120"/><path class="curve-line"/><g class="curve-handles"></g></svg>
+        <div class="curve-scale"><span>1.5</span><span>−0.5</span></div>
+        <div class="curve-caption"><span>底部专辑</span><span>顶部专辑</span></div>
+        <p class="parameter-hint">上下拖动控制点；曲线越高，该处旋转变化越快。中央保持正面。</p>
+      </details>
+      <label for="blur">镜头模糊程度 <output id="blur-value">16 px</output></label>
+      <input id="blur" type="range" min="0" max="24" step="1" value="16">
+      <details class="curve-editor" data-axis="blur"><summary>镜头模糊曲线</summary>
+        <div class="curve-presets"><button type="button" data-curve-preset="flat">均匀</button><button type="button" data-curve-preset="descending">渐强 → 渐弱</button></div>
+        <svg viewBox="0 0 240 140" aria-label="镜头模糊曲线图"><path class="curve-grid"/><path class="curve-line"/><g class="curve-handles"></g></svg>
+        <div class="curve-scale"><span>1.5</span><span>−0.5</span></div>
+        <div class="curve-caption"><span>底部专辑</span><span>顶部专辑</span></div>
+        <p class="parameter-hint">调整离焦变化，中央正面专辑保持清晰。设为 0 关闭模糊。</p>
+      </details>
+      <label for="scaleFalloff">大小渐变强度 <output id="scaleFalloff-value">35%</output></label>
+      <input id="scaleFalloff" type="range" min="0" max="0.9" step="0.05" value="0.35">
+      <details class="curve-editor" data-axis="scale"><summary>专辑大小曲线</summary>
+        <div class="curve-presets"><button type="button" data-curve-preset="flat">均匀</button><button type="button" data-curve-preset="descending">渐强 → 渐弱</button></div>
+        <svg viewBox="0 0 240 140" aria-label="专辑大小曲线图"><path class="curve-grid"/><path class="curve-line"/><g class="curve-handles"></g></svg>
+        <div class="curve-scale"><span>1.5</span><span>−0.5</span></div>
+        <div class="curve-caption"><span>底部专辑</span><span>顶部专辑</span></div>
+        <p class="parameter-hint">中央保持原大小，离开中央后逐渐缩小；曲线调整两端变化速度。</p>
+      </details>
+      <label for="positionX">整体水平位置 <output id="positionX-value">-5%</output></label>
+      <input id="positionX" type="range" min="-50" max="50" step="1" value="-5">
+      <label for="positionY">整体垂直位置 <output id="positionY-value">-1%</output></label>
+      <input id="positionY" type="range" min="-50" max="50" step="1" value="-1">
+      <label for="thickness">专辑厚度 <output id="thickness-value" for="thickness">0.060</output></label>
+      <input id="thickness" type="range" min="0.02" max="0.11" step="0.005" value="0.06">
+      <label for="lightAngle">光照角度 <output id="lightAngle-value" for="lightAngle">60°</output></label>
+      <input id="lightAngle" type="range" min="0" max="360" step="1" value="60">
+      <button id="copy-settings" class="copy-settings" type="button">复制效果参数</button>
+      <p id="copy-status" role="status"></p>
+      <textarea id="copy-fallback" aria-label="效果参数 JSON" readonly hidden></textarea>
+    </section>
+    <p class="status-message" id="status-message" role="status"></p>
+  </main>
+</body>
+</html>
