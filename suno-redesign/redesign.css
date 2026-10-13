@@ -84,7 +84,7 @@ dialog{border:1px solid #655164;border-radius:16px;color:var(--paper);background
 
 /* One cursor across the full homepage, including the embedded Hero and dialogs. */
 #hero-experience .app-rank{border-bottom:0}
-:root{--site-cursor:url('../suno-redesign-site/hero/assets/pointer.svg') 1 1,auto}
+:root{--site-cursor:url('../hero/assets/pointer.svg') 1 1,auto}
 html,body,body *{cursor:var(--site-cursor)!important}
 
 /* Complete plans are visible directly in the pricing section. */

@@ -153,6 +153,6 @@ export function setupHomepageNav(host) {
     header.dispatchEvent(new Event('nav-dismiss'));
     const section = document.querySelector('#pricing');
     if (section) section.scrollIntoView({ behavior: reduced.matches ? 'instant' : 'smooth', block: 'start' });
-    else location.assign('../suno-redesign-site/suno-redesign/#pricing');
+    else location.assign('../suno-redesign/#pricing');
   });
 }

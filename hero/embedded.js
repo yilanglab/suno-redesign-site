@@ -63,11 +63,11 @@ function checkHeroReady() {
   loadingObserver.disconnect();
 }
 loadingObserver.observe(host, { subtree: true, attributes: true, attributeFilter: ['data-renderer', 'data-state'] });
-const zhHero = await import('../suno-redesign-site/suno-redesign/zh-hero.js');
+const zhHero = await import('../suno-redesign/zh-hero.js');
 zhHero.localizeHero(host);
 await import('./hero.js');
 checkHeroReady();
 
-await import('../suno-redesign-site/suno-redesign/chapter-glow-controls.js');
+await import('../suno-redesign/chapter-glow-controls.js');
 
 zhHero.setupFontPanel(host);

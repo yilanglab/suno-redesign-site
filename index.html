@@ -6,15 +6,15 @@
   <meta name="theme-color" content="#101012">
   <title>Suno Redesign · 作品入口</title>
   <meta name="description" content="Suno 官网重新设计：浏览作品网页与作品说明。">
-  <link rel="icon" href="./suno-redesign-site/suno-redesign/assets/logo-live.svg" type="image/svg+xml">
+  <link rel="icon" href="./suno-redesign/assets/logo-live.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./entry.css">
 </head>
 <body>
   <main class="entry">
-    <header><img class="brand" src="./suno-redesign-site/suno-redesign/assets/logo-live.svg" alt="Suno" width="168" height="44"><p>官网 Redesign · 作品与设计思路</p><p class="entry-credit">Design by YILANG HE</p></header>
+    <header><img class="brand" src="./suno-redesign/assets/logo-live.svg" alt="Suno" width="168" height="44"><p>官网 Redesign · 作品与设计思路</p><p class="entry-credit">Design by YILANG HE</p></header>
     <div class="entry-grid">
-      <article class="entry-card entry-work"><a id="work-entry" class="entry-work-link" href="./suno-redesign-site/suno-redesign/zh/"><span class="card-number">01</span><div><h2>作品网页 <span aria-hidden="true">↗</span></h2><p>从一个想法，到你的音乐世界。</p></div><span class="card-action">浏览 Suno Redesign</span></a><button id="entry-language" class="entry-language" type="button" aria-label="当前为中文，切换为英文"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16m-4-4 4 4-4 4M20 16H4m4-4-4 4 4 4"/></svg><span>中文</span></button></article>
-      <a class="entry-card" href="./suno-redesign-site/redesignintro/"><span class="card-number">02</span><div><h2>作品说明 <span aria-hidden="true">↗</span></h2><p>关于结构、视觉与交互的设计思路。</p></div><span class="card-action">查看设计说明</span></a>
+      <article class="entry-card entry-work"><a id="work-entry" class="entry-work-link" href="./suno-redesign/zh/"><span class="card-number">01</span><div><h2>作品网页 <span aria-hidden="true">↗</span></h2><p>从一个想法，到你的音乐世界。</p></div><span class="card-action">浏览 Suno Redesign</span></a><button id="entry-language" class="entry-language" type="button" aria-label="当前为中文，切换为英文"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16m-4-4 4 4-4 4M20 16H4m4-4-4 4 4 4"/></svg><span>中文</span></button></article>
+      <a class="entry-card" href="./redesignintro/"><span class="card-number">02</span><div><h2>作品说明 <span aria-hidden="true">↗</span></h2><p>关于结构、视觉与交互的设计思路。</p></div><span class="card-action">查看设计说明</span></a>
     </div>
   </main>
   <script>
@@ -23,7 +23,7 @@
     let entryLanguage = 'zh';
     languageButton.addEventListener('click', () => {
       entryLanguage = entryLanguage === 'zh' ? 'en' : 'zh';
-      workEntry.href = `./suno-redesign-site/suno-redesign/${entryLanguage}/`;
+      workEntry.href = `./suno-redesign/${entryLanguage}/`;
       languageButton.querySelector('span').textContent = entryLanguage === 'zh' ? '中文' : 'English';
       languageButton.setAttribute('aria-label', entryLanguage === 'zh' ? '当前为中文，切换为英文' : '当前为英文，切换为中文');
     });
